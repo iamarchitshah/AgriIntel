@@ -2,13 +2,19 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 import os
+
+BASE_DIRS = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(BASE_DIRS, "trained_plant_disease_model.keras")
 def model_prediction(test_image):
-    model = tf.keras.models.load_model("trained_plant_disease_model.keras")
+    model = tf.keras.models.load_model(model_path)
     image = tf.keras.preprocessing.image.load_img(test_image,target_size=(128,128))
     input_arr = tf.keras.preprocessing.image.img_to_array(image)
     input_arr = np.array([input_arr]) #convert single image to batch
     predictions = model.predict(input_arr)
     return np.argmax(predictions) #return index of max element
+
+
+model = tf.keras.models.load_model(model_path)
 
 #Sidebar
 st.sidebar.title("AgriSens")
