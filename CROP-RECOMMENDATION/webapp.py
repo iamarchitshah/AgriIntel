@@ -16,10 +16,17 @@ warnings.filterwarnings('ignore')
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
+
+from PIL import Image
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+img_path = os.path.join(BASE_DIR, "crop.png")
+
+img = Image.open(img_path)
+
 # Display Images
 # import Image from pillow to open images
-from PIL import Image
-img = Image.open("crop.png")
+
 # display image using streamlit
 # width is used to set the width of an image
 st.image(img)
