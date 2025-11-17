@@ -30,8 +30,11 @@ img = Image.open(img_path)
 # display image using streamlit
 # width is used to set the width of an image
 st.image(img)
+BASE_DIRS = os.path.dirname(os.path.abspath(__file__))
+csv_path = os.path.join(BASE_DIRS, "Crop_recommendation.csv")
 
-df= pd.read_csv('Crop_recommendation.csv')
+df = pd.read_csv(csv_path)
+
 
 #features = df[['temperature', 'humidity', 'ph', 'rainfall']]
 X = df[['N', 'P','K','temperature', 'humidity', 'ph', 'rainfall']]
