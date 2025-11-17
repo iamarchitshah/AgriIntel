@@ -14,7 +14,6 @@ def model_prediction(test_image):
     return np.argmax(predictions) #return index of max element
 
 
-model = tf.keras.models.load_model(model_path)
 
 #Sidebar
 st.sidebar.title("AgriSens")
