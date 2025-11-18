@@ -2,12 +2,7 @@
     <h1>AgriIntel : AI-POWERED SMART FARMING ASSISTANT</h1>
 </div>
 
-<div align="center">
-    <h3>Link : https://agrisens.netlify.app/ </h3>
-</div>
-
 ![Screenshot 2025-01-22 210034](https://github.com/user-attachments/assets/5b945e7d-bbb0-4463-b06f-681445e102bd)
-
 
 ## Overview
 
@@ -79,12 +74,7 @@ These two models are integrated into the Smart Crop Recommendation System with P
 
 ![20250124_135249](https://github.com/user-attachments/assets/1c660b6b-5b70-440e-a453-bf802b490bdc)
 
-
 </details>
-
-
-
-
 
 ## Results
 
@@ -109,21 +99,6 @@ These two models are integrated into the Smart Crop Recommendation System with P
 
 
 
-| Accuracy Comparison Graph of all models |
-|---------------------------|
-![1](https://github.com/ravikant-diwakar/AgriSens-SMART-CROP-RECOMMENDATION-SYSTEM-WITH-PLANT-DISEASE-IDENTIFICATION/assets/110620635/604bd0b3-5161-48e2-aef0-28267fd85aac)
-
-> The **Accuracy vs Crop Graphs** visualize the performance of different algorithms in crop recommendation accuracy.
-
-| Accuracy vs Crop Graphs | Accuracy vs Crop Graphs |
-| ----------- | -------------|
-| ![4](https://github.com/user-attachments/assets/ef096a91-ee2f-470e-a134-9c0ba9c4862a) | ![6](https://github.com/user-attachments/assets/84ed33e7-f496-469e-b663-f20997936ced) |
-![8](https://github.com/user-attachments/assets/a9230e96-b813-4213-90cc-6654f8cec69f) | ![10](https://github.com/user-attachments/assets/8455aa24-1856-43f9-ab0e-07adeda49dda) |
-![12](https://github.com/user-attachments/assets/40d7bdeb-bc4f-40f5-97c3-110e229e30ca) | ![14](https://github.com/user-attachments/assets/639ba618-9930-467d-a462-354c5fd44a9c) |
-![3](https://github.com/user-attachments/assets/69a9033f-cf39-45d3-93c9-57fb9ea8229d) | ![2](https://github.com/user-attachments/assets/70ffbe66-ca11-4b89-b2bf-16d1f71b5534) |
-
-
----
 
 # 📌Plant Disease Identification Model 
 
@@ -148,38 +123,6 @@ For the Plant Disease Identification Model, a Convolutional Neural Network (CNN)
 - The model works with a predefined list of 14 crops.
 - For each crop, the model is trained to detect and classify up to 38 specific diseases.
 
-> [!NOTE]
-> Since model is trained for specific crops only so it can diagnose those specific crops only. The List of Crops For which this model will be helpful is:
-
-```
-[ 'Apple',
-'Blueberry',
-'Cherry_(including sour)',
-'Corn_(maize)',
-'Grape',
-'Orange',
-'Peach', 'Pepper, _bell',
-'Potato',
-'Raspberry',
-'Soybean',
-'Squash',
-'Strawberry',
-'Tomato' ]
-```
-
-> [!NOTE]
-> The crop which can be used for diagnosis can only diagnose specific disease for which the model is trained. The List of crop diseases on Which Model is trained on is:
-
-```
-Found 17572 files belonging to 38 classes.
-['Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy', 'Blueberry___healthy', 'Cherry_(including_sour)___Powdery_mildew', 'Cherry_(including_sour)___healthy',
-'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot', 'Corn_(maize)___Common_rust_', 'Corn_(maize)___Northern_Leaf_Blight', 'Corn_(maize)___healthy', 'Grape___Black_rot', 'Grape___Esca_(Black_Measles)',
-'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)', 'Grape___healthy', 'Orange___Haunglongbing_(Citrus_greening)', 'Peach___Bacterial_spot', 'Peach___healthy', 'Pepper,_bell___Bacterial_spot',
-'Pepper,_bell___healthy', 'Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy', 'Raspberry___healthy', 'Soybean___healthy', 'Squash___Powdery_mildew', 'Strawberry___Leaf_scorch',
-'Strawberry___healthy', 'Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite',
-'Tomato___Target_Spot', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus', 'Tomato___Tomato_mosaic_virus', 'Tomato___healthy']
-
-```
 ### Crop Disease Guide
 
 > Follow this link for detailed information on the Crop Disease Guide.
@@ -189,16 +132,6 @@ Found 17572 files belonging to 38 classes.
 ### How it Works:
 - The model uses images of plant leaves to detect symptoms of various diseases.
 - It applies CNN-based image classification to identify the correct disease for a given crop.
-
-
-
-| **Example of Diseased image** |
-| ------------------------------|
-| ![image](https://github.com/ravikant-diwakar/AgriSens-SMART-CROP-RECOMMENDATION-SYSTEM-WITH-PLANT-DISEASE-IDENTIFICATION/assets/110620635/2f230981-13b5-4010-a346-595c90fb6b32) ![image](https://github.com/ravikant-diwakar/AgriSens-SMART-CROP-RECOMMENDATION-SYSTEM-WITH-PLANT-DISEASE-IDENTIFICATION/assets/110620635/4219025a-0319-4b72-847f-b063c06ced0c) ![image](https://github.com/ravikant-diwakar/AgriSens-SMART-CROP-RECOMMENDATION-SYSTEM-WITH-PLANT-DISEASE-IDENTIFICATION/assets/110620635/2ece067b-5f8c-46d6-b05f-d1517aaf62a9) ![image](https://github.com/ravikant-diwakar/AgriSens-SMART-CROP-RECOMMENDATION-SYSTEM-WITH-PLANT-DISEASE-IDENTIFICATION/assets/110620635/cdb08134-7177-4df9-841d-1f9d3f171085) |
-
-| Training and validation (accuracy and loss) CNN |
-|---------------------------------------------|
-| ![image](https://github.com/ravikant-diwakar/AgriSens-SMART-CROP-RECOMMENDATION-SYSTEM-WITH-PLANT-DISEASE-IDENTIFICATION/assets/110620635/71e95ae9-05df-44dd-8192-133180981113) ![image](https://github.com/ravikant-diwakar/AgriSens-SMART-CROP-RECOMMENDATION-SYSTEM-WITH-PLANT-DISEASE-IDENTIFICATION/assets/110620635/9a11536a-8480-41cd-8099-9c0cec2c2c62) |
 
 
 These results demonstrate the effectiveness of the Smart Crop Recommendation System with Plant Disease Identification in assisting farmers with informed crop selection and disease management, thereby contributing to improved agricultural practices and crop yields.
@@ -217,61 +150,8 @@ These results demonstrate the effectiveness of the Smart Crop Recommendation Sys
 
 
 ## 👨‍💻 CONTRIBUTERS
-- [Ravikant Diwakar](https://github.com/ravikant-diwakar)
-- [Amit Kumar](https://github.com/AMITKUMAR7970)
-- [Gaurav Kumar](https://github.com/Gauravkumar1741)
-- Aditya Chaudhary
-
-## 📷 Screenshots
-
-| Home page | Features | 
-| --------- | --------- |
-| ![Screenshot 2025-03-22 104944](https://github.com/user-attachments/assets/7b3f6f1b-6423-4ee6-ab16-6391846635f5) | ![Screenshot 2025-03-22 105012](https://github.com/user-attachments/assets/58fe884b-2868-4d55-80d9-a3bdf519ece7) |
-
-| Team Members | Contact Us |
-| --------- | --------- |
-| ![Screenshot 2025-03-22 105046](https://github.com/user-attachments/assets/1e15fa2b-afb1-4fa1-b743-a72af6dcd3c1) | ![Screenshot 2025-03-22 105141](https://github.com/user-attachments/assets/f3e6a7ca-9ebd-41c5-88c1-fd6e1f6528e9) |
-
-| Crop Recommendation | Plant Disease Identification |
-| --------- | --------- |
-| ![Screenshot 2025-03-22 105516](https://github.com/user-attachments/assets/b1cedad0-48fc-44e6-8595-93e9795519f5) | ![Screenshot 2025-03-22 110018](https://github.com/user-attachments/assets/af7915e4-be3d-4741-bec6-4a2e49054b3a) | 
-
-| Fertilizer Recommendation | Smart Farming Guide |
-| --------- | --------- |
-| ![Screenshot 2025-03-22 105639](https://github.com/user-attachments/assets/0d526603-15c5-443d-9f6c-cab83596cbe0) | ![Screenshot 2025-03-22 110057](https://github.com/user-attachments/assets/d454ef17-287c-4a0b-bee2-a5085d63a8bb) |
-
-| 📲 | 📲 | 📲 | 📲 |
-| -- | -- | -- | -- |
-| ![Screenshot 2025-03-22 110147](https://github.com/user-attachments/assets/a83eb79b-0c67-4a77-ae20-936ea481a8d4) | ![Screenshot 2025-03-22 110403](https://github.com/user-attachments/assets/ff101e2d-c712-48da-b478-9c3793ace689) | ![Screenshot 2025-03-22 110637](https://github.com/user-attachments/assets/c188d7f7-93ec-42d7-a719-d81c7eec2b59) | ![Screenshot 2025-03-22 110738](https://github.com/user-attachments/assets/91298e33-94ef-4408-b8d8-9d00b3195074) |
-
-
-
-
-
-
-
-
-
-
-## 📧 Contact
-
-If you have any questions or feedback, feel free to reach out to us at [🔗Link](https://agrisens.netlify.app/form/).
-
----
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [Shah Archit](https://github.com/iamarchitshah)
+- [Bhalani Tirth](https://github.com/D24IT163)
+- [Bhingradiya Jay](https://github.com/BJAYG12)
 
 
